@@ -1,402 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Config -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#000000" />
-		<title>Cathy Loerzel</title>
-		<!-- Favicon -->
-		<link rel="icon" href="img/favicon.ico" />
-		<!-- Bootstrap -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
-		<!-- Aos -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- Custom CSS -->
-		<link href="./styles/normalize.css" rel="stylesheet" type="text/css" />
-		<link href="./styles/webflow.css" rel="stylesheet" type="text/css" />
-		<link href="./styles/App.css" rel="stylesheet" type="text/css" />
-	</head>
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>Cathy Loerzel</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico">
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheets -->
+    <link href="./styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./styles/webflow.css" rel="stylesheet" type="text/css">
+    <link href="./styles/index.css" rel="stylesheet" type="text/css">
+</head>
 
-	<body data-aos-easing="ease" data-aos-duration="3000" data-aos-delay="0" class="contain">
+<body data-aos-easing="ease" data-aos-duration="3000" data-aos-delay="0" class="contain">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="https://storage.googleapis.com/cathy-loerzel-img/cathy-loerzel-signature.png" alt="Cathy Loerzel" class="signature">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="me-auto navbar-nav">
+                    <li><a href="/" data-rb-event-key="/" class="mx-2 nav-link">Home</a></li>
+                    <li class="mx-2 nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Story Work</a>
+                        <ul id="event-categories-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a href="/events?category=1703796966610" class="dropdown-item">Retreats</a></li>
+                            <li><a href="/events?category=1703796966611" class="dropdown-item">Coaching</a></li>
+                            <li><a href="/events?category=1703796966612" class="dropdown-item">Conferences</a></li>
+                            <li><a href="/events?category=1703796966613" class="dropdown-item">Intensives</a></li>
+                        </ul>
+                    </li>
+                    <li class="mx-2 nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul id="post-categories-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a href="/posts?category=1703796960640" class="dropdown-item">Writing</a></li>
+                            <li><a href="/posts?category=1703796960641" class="dropdown-item">Podcasts</a></li>
+                            <li><a href="/posts?category=1703796960642" class="dropdown-item">Teaching</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/redeeming-heartache" data-rb-event-key="/redeeming-heartache" class="mx-2 nav-link">Redeeming Heartache</a></li>
+                    <li><a href="/#contact-form" data-rb-event-key="/#contact-form" class="mx-2 nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container">
-				<a href="#" class="navbar-brand"
-					><img
-						src="https://storage.googleapis.com/cathy-loerzel-img/cathy-loerzel-signature.png"
-						alt="Cathy Loerzel"
-						class="signature"
-				/></a>
-
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="navbar-collapse collapse" id="navbarSupportedContent">
-					<ul class="me-auto navbar-nav">
-						<li><a href="/" data-rb-event-key="/" class="mx-2 nav-link">Home</a></li>
-						<li class="mx-2 nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Story Work
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a href="/events?category=1703796966610" class="dropdown-item">Retreats</a></li>
-								<li><a href="/events?category=1703796966611" class="dropdown-item">Coaching</a></li>
-								<li><a href="/events?category=1703796966612" class="dropdown-item">Conferences</a></li>
-								<li><a href="/events?category=1703796966613" class="dropdown-item">Intensives</a></li>
-							</ul>
-						</li>
-						<li class="mx-2 nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Resources
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a href="/posts?category=1703796960640" class="dropdown-item">Writing</a></li>
-                                <li><a href="/posts?category=1703796960641" class="dropdown-item">Podcasts</a></li>
-                                <li><a href="/posts?category=1703796960642" class="dropdown-item">Teaching</a></li>
-							</ul>
-						</li>
-						<li>
-							<a
-								href="/redeeming-heartache"
-								data-rb-event-key="/redeeming-heartache"
-								class="mx-2 nav-link"
-							>
-								Redeeming Heartache
-							</a>
-						</li>
-						<li><a href="/#contact-form" data-rb-event-key="/#contact-form" class="mx-2 nav-link">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-		<!-- Main Content -->
-
-		<!-- Hero Section -->
-		<section class="hero-section">
-			<div class="bg-top"></div>
-			<div class="bg-bottom"></div>
-			<div class="content-wrapper w-container">
-				<div class="hero-text-box">
-					<div>
-						<h1 class="h1-white">
-							Co-Founder of The Allender Center, author, speaker, and story work coach.
-						</h1>
-						<div class="top-border _20">
-							<a
-								href="https://www.zondervan.com/p/redeeming-heartache/"
-								target="_blank"
-								class="text-link-2"
-								rel="noreferrer"
-							>
-								Order "redeeming heartache" now
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="hero-flex">
-					<div class="hero-image _2"></div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Events Nav Section -->
-		<section id="visual-nav" class="w-container flex-center-container aos-init aos-animate" data-aos="fade-up">
-			<div class="intro-box" style="width: 20%">
-				<div class="intro-text-box">
-					<a class="title-link" href="/events?category=1703796966610"> Retreats </a>
-					<div class="top-border _5">
-						<a class="text-link" href="/events?category=1703796966610"> Embodied spiritual healing </a>
-					</div>
-				</div>
-			</div>
-			<div class="intro-box-alt1" style="width: 20%">
-				<div class="intro-text-box">
-					<a class="title-link" href="/events?category=1703796966611"> Coaching </a>
-					<div class="top-border _5">
-						<a class="text-link" href="/events?category=1703796966611"> Story Work and leadership coaching sessions </a>
-					</div>
-				</div>
-			</div>
-			<div class="intro-box-alt2" style="width: 20%">
-				<div class="intro-text-box">
-					<a class="title-link" href="/events?category=1703796966612"> Conferences </a>
-					<div class="top-border _5">
-						<a class="text-link" href="/events?category=1703796966612"> Opportunities to hear from Cathy </a>
-					</div>
-				</div>
-			</div>
-			<div class="intro-box-alt3" style="width: 20%">
-				<div class="intro-text-box">
-					<a class="title-link" href="/events?category=1703796966613"> Intensives </a>
-					<div class="top-border _5">
-						<a class="text-link" href="/events?category=1703796966613"> Go deeper into your own story </a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Upcoming Events Section -->
-		<section class="w-container upcoming-section">
-            <h3 class="lg-title upcoming-events-header">Upcoming Events</h3>
-            <div class="my-5"></div>
-        </section>
-
-		<!-- Newsletter Form Section -->
-		<section id="newsletter-form" class="content-section wf-section">
-			<div class="content-wrapper w-container">
-				<div class="center-box">
-					<div class="mini-title aos-init aos-animate" data-aos="fade-up">
-						Connect with Cathy
-						<br />
-						&amp;
-						<br />
-						Subscribe to her mailing list
-					</div>
-				</div>
-			</div>
-			<div class="content-wrapper w-container">
-				<div class="_49-column-2">
-					<div class="top-border-2 _10">
-						<div class="form-block-2">
-							<div class="form-block-2">
-								<form>
-									<p data-aos="fade-up" class="aos-init aos-animate">Get promotions &amp; updates!</p>
-									<input type="email" name="email" placeholder="email" class="input" />
-									<input type="text" name="name" placeholder="your name" class="input" />
-									<button label="subscribe">Subscribe!</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Contact Form Section -->
-		<section id="contact-form" class="content-section-alt wf-section">
-			<div class="section-bg-flex-center">
-				<h3 class="lg-title mt-5">Contact</h3>
-				<div class="_25-column"></div>
-				<div class="form-block aos-init" data-aos="fade-up">
-					<h3>Reach out today</h3>
-					<form name="wf-form-Contact-Form" class="flex-space top-border _20">
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="30"
-							name="name"
-							placeholder="your name *"
-							required
-						/>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="256"
-							name="company"
-							placeholder="your company"
-						/>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="30"
-							name="phone"
-							placeholder="your phone #"
-						/>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="256"
-							name="email"
-							placeholder="your email *"
-							required
-						/>
-						<select name="type" class="text-field-4 w-input" required="">
-							<option value="init" disabled selected>type of event *</option>
-							<option value="coaching">Coaching</option>
-							<option value="intensives">Intensives</option>
-							<option value="conferences">Speaking Engagements</option>
-							<option value="other">Other</option>
-						</select>
-						<textarea
-							class="textarea-2 w-input"
-							maxlength="5000"
-							name="message"
-							placeholder="details for cathy *"
-							required
-						>
-						</textarea>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="256"
-							name="location"
-							placeholder="location"
-							value=""
-						/>
-						<button type="submit" class="submit-button-3 w-button">Let's talk!</button>
-					</form>
-				</div>
-			</div>
-		</section>
-
-		<!-- Featured Post Section -->
-		<section class="mb-4 w-container aos-init" data-aos="fade-up">
-			<h1 class="featured-blog-header">Featured Post</h1>
-			<a class="text-img-container" href="/posts/featured">
-				<img
-					alt="Featured Post - Cathy Loerzel's Blog"
-					class="image featured-image shadow"
-					style="width: 100%"
-					src="/img/Abstract-2.jpg"
-				/>
-				<div class="title-link featured-text">
-					<p>Featured Post Title</p>
-				</div>
-			</a>
-		</section>
-
-		<!-- Post Nav Section -->
-		<section class="w-container">
-			<section id="visual-nav" class="cards-section">
-				<h1>Categories</h1>
-				<div class="w-container flex-center-container aos-init aos-animate" data-aos="fade-up">
-					<div class="intro-box">
-						<div class="intro-text-box">
-							<a class="title-link" href="/posts?category=1703796960640">Writing</a>
-							<div class="top-border _5">
-								<a class="text-link" href="/posts?category=1703796960640"> Blog posts and more... </a>
-							</div>
-						</div>
-					</div>
-					<div class="intro-box-alt1">
-						<div class="intro-text-box">
-							<a class="title-link" href="/posts?category=1703796960641">Podcasts</a>
-							<div class="top-border _5">
-								<a class="text-link" href="/posts?category=1703796960641"> Features and guest appearances </a>
-							</div>
-						</div>
-					</div>
-					<div class="intro-box-alt2 no-border">
-						<div class="intro-text-box">
-							<a class="title-link" href="/posts?category=1703796960642">Teaching</a>
-							<div class="top-border _5">
-								<a class="text-link" href="/posts?category=1703796960642"> Recorded lectures and teaching </a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<h1>Topics</h1>
-				<ul class="category-thumbnails flex-center-container aos-init aos-animate">
-					<li class="category-item" data-aos="fade-up">
-						<a href="/posts?topic=1703796960710">
-							<div class="circle-color redeeming-heartache"></div>
-							<h4 class="over-img">Redeeming Heartache</h4>
-						</a>
-					</li>
-					<li class="category-item" data-aos="fade-up">
-						<a href="/posts?topic=1703796960711">
-							<div class="circle-color leadership"></div>
-							<h4 class="over-img">Leadership</h4>
-						</a>
-					</li>
-					<li class="category-item" data-aos="fade-up">
-						<a href="/posts?topic=1703796960712">
-							<div class="circle-color sexual-abuse"></div>
-							<h4 class="over-img">Sexual Abuse</h4>
-						</a>
-					</li>
-					<li class="category-item" data-aos="fade-up">
-						<a href="/posts?topic=1703796960713">
-							<div class="circle-color allender-methodology"></div>
-							<h4 class="over-img">Allender Methodology</h4>
-						</a>
-					</li>
-					<li class="category-item" data-aos="fade-up">
-						<a href="/posts?topic=1703796960714">
-							<div class="circle-color spiritual-warfare"></div>
-							<h4 class="over-img">Spiritual Warfare</h4>
-						</a>
-					</li>
-				</ul>
-			</section>
-		</section>
-
-		<!-- Footer -->
-		<footer class="footer">
-            <div class="footer-row">            
-                <div class="footer-col">
-                    <a class="footer-link" href="/about">About</a>
-                    <a class="footer-link" href="/contact">Contact</a>
-                    <a class="footer-link" href="/redeeming-heartache">Redeeming Heartache</a>
-                </div>
-                <div class="footer-col">
-                    <a class="footer-link" href="/events">Events</a>
-                    <a class="footer-link-alt" href="/events?category=1703796966610">⤷Retreats</a>
-                    <a class="footer-link-alt" href="/events?category=1703796966611">⤷Coaching</a>
-                    <a class="footer-link-alt" href="/events?category=1703796966612">⤷Conferences</a>
-                    <a class="footer-link-alt" href="/events?category=1703796966613">⤷Intensives</a>
-                </div>
-                <div class="footer-col">
-                    <a class="footer-link" href="/posts">Posts</a>
-                    <a class="footer-link-alt" href="/posts?category=1703796960640">⤷Writing</a>
-                    <a class="footer-link-alt" href="/posts?category=1703796960641">⤷Podcasts</a>
-                    <a class="footer-link-alt" href="/posts?category=1703796960642">⤷Teaching</a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="bg-top"></div>
+        <div class="bg-bottom"></div>
+        <div class="content-wrapper w-container">
+            <div class="hero-text-box">
+                <div>
+                    <h1 class="h1-white">Co-Founder of The Allender Center, author, speaker, and story work coach.</h1>
+                    <div class="top-border _20">
+                        <a href="https://www.zondervan.com/p/redeeming-heartache/" target="_blank" class="text-link-2" rel="noreferrer">Order "redeeming heartache" now</a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-row">
-                <h5>&copy; Copyright 2024 Cathy Loerzel</h5>
+            <div class="hero-flex">
+                <div class="hero-image _2"></div>
             </div>
-		</footer>
+        </div>
+    </section>
 
-		<!-- AOS Script -->
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
+	<!-- Events Nav Section -->
+	<section id="event-categories" class="w-container flex-center-container aos-init aos-animate" data-aos="fade-up"></section>
 
-		<!-- Bootstrap Script -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"
-		></script>
-	</body>
+	<!-- Upcoming Events Section -->
+	<section class="w-container upcoming-section">
+		<h3 class="lg-title upcoming-events-header">Upcoming Events</h3>
+		<div class="my-5"></div>
+	</section>
+
+	<!-- Newsletter Form Section -->
+	<section id="newsletter-form" class="content-section wf-section">
+		<div class="content-wrapper w-container">
+			<div class="center-box">
+				<div class="mini-title aos-init aos-animate" data-aos="fade-up">
+					Connect with Cathy
+					<br />
+					&amp;
+					<br />
+					Subscribe to her mailing list
+				</div>
+			</div>
+		</div>
+		<div class="content-wrapper w-container _49-column-2 top-border-2 _10 form-block-2">
+			<form>
+				<p data-aos="fade-up" class="aos-init aos-animate">Get promotions &amp; updates!</p>
+				<input type="email" name="email" placeholder="email" class="input" />
+				<input type="text" name="name" placeholder="your name" class="input" />
+				<button label="subscribe">Subscribe!</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Contact Form Section -->
+	<section id="contact-form" class="content-section-alt wf-section">
+		<div class="section-bg-flex-center">
+			<h3 class="lg-title mt-5">Contact</h3>
+			<div class="_25-column"></div>
+			<div class="form-block aos-init" data-aos="fade-up">
+				<h3>Reach out today</h3>
+				<form name="wf-form-Contact-Form" class="flex-space top-border _20">
+					<input
+						type="text"
+						class="text-field-4 w-input"
+						maxlength="30"
+						name="name"
+						placeholder="your name *"
+						required
+					/>
+					<input
+						type="text"
+						class="text-field-4 w-input"
+						maxlength="256"
+						name="company"
+						placeholder="your company"
+					/>
+					<input
+						type="text"
+						class="text-field-4 w-input"
+						maxlength="30"
+						name="phone"
+						placeholder="your phone #"
+					/>
+					<input
+						type="text"
+						class="text-field-4 w-input"
+						maxlength="256"
+						name="email"
+						placeholder="your email *"
+						required
+					/>
+					<select name="type" class="text-field-4 w-input" required="">
+						<option value="init" disabled selected>type of event *</option>
+						<option value="coaching">Coaching</option>
+						<option value="intensives">Intensives</option>
+						<option value="conferences">Speaking Engagements</option>
+						<option value="other">Other</option>
+					</select>
+					<textarea
+						class="textarea-2 w-input"
+						maxlength="5000"
+						name="message"
+						placeholder="details for cathy *"
+						required
+					>
+					</textarea>
+					<input
+						type="text"
+						class="text-field-4 w-input"
+						maxlength="256"
+						name="location"
+						placeholder="location"
+						value=""
+					/>
+					<button type="submit" class="submit-button-3 w-button">Let's talk!</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Featured Post Section -->
+	<section id="featured-post" class="mb-4 w-container aos-init" data-aos="fade-up"></section>
+
+	<!-- Post Categories Section -->
+	<section id="post-categories" class="cards-section w-container">
+		<h1>Categories</h1>
+	</section>
+
+	<!-- Post Topics Section -->
+	<section id="post-topics" class="cards-section w-container">
+		<h1>Topics</h1>
+	</section>
+
+	<!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <a class="footer-link" href="/about">About</a>
+                <a class="footer-link" href="/contact">Contact</a>
+                <a class="footer-link" href="/redeeming-heartache">Redeeming Heartache</a>
+            </div>
+            <div class="footer-col">
+                <a class="footer-link" href="/events">Events</a>
+                <a class="footer-link-alt" href="/events?category=1703796966610">⤷Retreats</a>
+                <a class="footer-link-alt" href="/events?category=1703796966611">⤷Coaching</a>
+                <a class="footer-link-alt" href="/events?category=1703796966612">⤷Conferences</a>
+                <a class="footer-link-alt" href="/events?category=1703796966613">⤷Intensives</a>
+            </div>
+            <div class="footer-col">
+                <a class="footer-link" href="/posts">Posts</a>
+                <a class="footer-link-alt" href="/posts?category=1703796960640">⤷Writing</a>
+                <a class="footer-link-alt" href="/posts?category=1703796960641">⤷Podcasts</a>
+                <a class="footer-link-alt" href="/posts?category=1703796960642">⤷Teaching</a>
+            </div>
+        </div>
+        <div class="footer-row">
+            <h5>&copy; Copyright 2024 Cathy Loerzel</h5>
+        </div>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- AOS Initialization -->
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>
