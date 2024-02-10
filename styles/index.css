@@ -262,11 +262,22 @@ h3 {
 .text-link-2:hover {
     opacity: 0.8;
 }
+.text-link-3 {
+    border-bottom: none;
+    font-family: "Roboto",sans-serif;
+    color: #000;
+    font-size: 13.5px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
 
 /* IMAGES */
 .image {
     width: 100vw;
     max-width: none;
+    object-fit: cover;
+    max-height: 400px;
 }
 .text-img-container {
     position: relative;
@@ -421,6 +432,23 @@ h3 {
 /* BLOG */
 .featured-blog-header {
     padding: 16px;
+}
+.post-text-box
+{
+    position: absolute;
+    top: 200px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.post-category-header
+{
+    color: rgba(0,0,0,.7);
+    font-size: 8vw;
+    line-height: 5rem;
+    text-transform: uppercase;
+    margin: 20px 0;
 }
 
 /* FORMS */
@@ -668,6 +696,35 @@ h3 {
     color: #fff;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    width: 275px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-title {
+    color: #934a26;
+    margin: 5px auto 5px auto;
+}
+
+.topic-banner {
+    height: 2rem;
+}
+
 /*--- Cool little trick to get text on top of the images! ---*/
 .over-img {
     position: absolute;
@@ -731,14 +788,6 @@ h3 {
 }
 .title-link:hover {
     opacity: 0.8;
-}
-.text-link {
-    font-family: "Cormorant Garamond", sans-serif;
-    color: #fff;
-    font-size: 19px;
-    font-style: italic;
-    font-weight: 600;
-    text-decoration: none;
 }
 /* EVENTS */
 .upcoming-section {
