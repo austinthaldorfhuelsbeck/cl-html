@@ -15,7 +15,7 @@ function getDetailUrl() {
 function createPostElement(post, topic) {
 	const postElement = document.createElement("a");
 	postElement.className = "grow";
-	postElement.href = `/post?id=${post.post_id}`;
+	postElement.href = `/post.html?id=${post.post_id}`;
 	const displayText = post.text.length > 250 ? `${post.text.slice(0, 250)}...` : post.text;
 	postElement.innerHTML = `
         <div class="card aos-init aos-animate" data-aos="fade">
@@ -52,7 +52,7 @@ async function loadPosts() {
 }
 
 async function loadPost() {
-	if (!window.location.pathname.includes("/post")) return;
+	if (!window.location.pathname.includes("/post.")) return;
 
 	const detailUrl = getDetailUrl();
 	if (detailUrl) {
@@ -67,7 +67,7 @@ async function loadPost() {
 			postDetailSection.innerHTML = `
                 <h1>${post.label}</h1>
                 <div class="col-3">
-                    <a class="white-text" href="/posts?topic=${post.post_topic_id}" style="background-color: ${topicRes.data.hex}">
+                    <a class="white-text" href="/posts.html?topic=${post.post_topic_id}" style="background-color: ${topicRes.data.hex}">
                         <em>← Back to topic</em>
                     </a>
                     <h5>Published on ${new Date(post.created_at).toLocaleDateString()}</h5>
@@ -76,9 +76,30 @@ async function loadPost() {
                     <a target="_blank" rel="noreferrer" href="${post.url}">
                         <img class="image-blog" src="${post.img}" alt="${post.label}">
                     </a>
-                    ${post.audio ? `<aside class="center-box"><audio preload="none" controls><source type="audio/mpeg" src="${post.audio}"></audio><br><br><a class="button" href="${post.audio}" target="_blank" download rel="noreferrer">Download</a></aside>` : ""}
+                    ${
+						post.audio
+							? `<aside class="center-box">
+							<audio preload="none" controls>
+								<source type="audio/mpeg" src="${post.audio}">
+							</audio>
+							<br>
+							<br>
+							<a class="button" href="${post.audio}" target="_blank" download rel="noreferrer">Download</a>
+						</aside>`
+							: ""
+					}
                 </div>
                 <div>${post.content}</div>
+				${post.video ? `<video src=${post.video} />` : ""}
+				${
+					post.audio || post.video
+						? ""
+						: `<img
+							src="../img/cathy-loerzel-signature.png"
+							alt="Cathy Loerzel"
+							class="signature"
+						/>`
+				}
             `;
 		}
 	}
@@ -92,7 +113,7 @@ async function loadFeaturedPost() {
 	const { img, label, post_id } = data.data;
 	featuredPostSection.innerHTML = `
         <h1 class="featured-blog-header">Featured Post</h1>
-        <a class="text-img-container" href="/post?id=${post_id}">
+        <a class="text-img-container" href="/post.html?id=${post_id}">
             <img class="image shadow featured-image" src="${img}" alt="${label}" />
             <p class="title-link featured-text">${label}</p>
         </a>

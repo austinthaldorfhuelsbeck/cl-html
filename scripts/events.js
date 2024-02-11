@@ -12,8 +12,7 @@ async function loadEventDetails(categoryId, events) {
 
 	// Set header, subheader, and description based on fetched details
 	eventCategoryHeader.textContent = detailResponse.data.label;
-	eventCategorySubheader.innerHTML =
-		events.length > 0 ? `Upcoming ${detailResponse.data.label}` : `(No upcoming ${detailResponse.data.label})`;
+	eventCategorySubheader.innerHTML = events.length > 0 ? `Upcoming ${detailResponse.data.label}` : "";
 	eventCategoryDesc.innerHTML = getEventDescription(categoryId);
 	backToEvents.textContent = "← Back to all events";
 }
