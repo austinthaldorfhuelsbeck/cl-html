@@ -109,41 +109,42 @@
 			</div>
 		</nav>
 
-		<!-- Hero Section -->
-		<section class="hero-section">
-			<div class="bg-top"></div>
-			<div class="bg-bottom"></div>
-			<div class="content-wrapper w-container">
-				<div class="hero-text-box">
-					<div>
-						<h1 class="h1-white">
-							Co-Founder of The Allender Center, author, speaker, and story work coach.
-						</h1>
-						<div class="top-border _20">
-							<a
-								href="https://www.zondervan.com/p/redeeming-heartache/"
-								target="_blank"
-								class="text-link-2"
-								rel="noreferrer"
-								>Order "redeeming heartache" now</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="hero-flex">
-					<div class="hero-image _2"></div>
-				</div>
+		<!-- Events Banner -->
+		<div class="post-banner">
+			<div class="post-text-box">
+				<h1
+					id="event-header"
+					class="post-category-header aos-init aos-animate"
+					data-aos="fade"
+					data-aos-duration="100000"
+				>
+					Events
+				</h1>
+				<a href="/events" id="back-to-events"><em></em></a>
 			</div>
-		</section>
+			<img src="/img/Cathy-blogbanner-notext.jpg" alt="Cathy Loerzel's Blog" class="image" style="width: 100%" />
+		</div>
 
-		<!-- Event Categories Section -->
-		<section id="event-categories" class="w-container"></section>
+		<!-- Event Category Description -->
+		<section
+			id="event-category-desc"
+			class="aos-init aos-animate"
+			data-aos="fade"
+		></section>
 
 		<!-- Upcoming Events Section -->
 		<section class="w-container upcoming-section">
-			<h3 class="lg-title upcoming-events-header">Upcoming Events</h3>
-			<div class="my-5"></div>
+			<h3 id="event-subheader" class="lg-title upcoming-events-header">Upcoming Events</h3>
+			<div class="my-5" id="events-list"></div>
 		</section>
+
+		<!-- Event Categories Section -->
+		<section id="event-categories" class="w-container">
+			<h1>Categories</h1>
+		</section>
+
+		<!-- Posts List -->
+		<section id="posts-list" class="flex-wrap w-container"></section>
 
 		<!-- Newsletter Form Section -->
 		<section id="newsletter-form" class="content-section wf-section">
@@ -168,85 +169,14 @@
 			</div>
 		</section>
 
-		<!-- Contact Form Section -->
-		<section id="contact-form" class="content-section-alt wf-section">
-			<div class="section-bg-flex-center">
-				<h3 class="lg-title mt-5">Contact</h3>
-				<div class="_25-column"></div>
-				<div class="form-block aos-init" data-aos="fade-up">
-					<h3>Reach out today</h3>
-					<form name="wf-form-Contact-Form" class="flex-space top-border _20">
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="30"
-							name="name"
-							placeholder="your name *"
-							required
-						/>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="256"
-							name="company"
-							placeholder="your company"
-						/>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="30"
-							name="phone"
-							placeholder="your phone #"
-						/>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="256"
-							name="email"
-							placeholder="your email *"
-							required
-						/>
-						<select name="type" class="text-field-4 w-input" required="">
-							<option value="init" disabled selected>type of event *</option>
-							<option value="coaching">Coaching</option>
-							<option value="intensives">Intensives</option>
-							<option value="conferences">Speaking Engagements</option>
-							<option value="other">Other</option>
-						</select>
-						<textarea
-							class="textarea-2 w-input"
-							maxlength="5000"
-							name="message"
-							placeholder="details for cathy *"
-							required
-						>
-						</textarea>
-						<input
-							type="text"
-							class="text-field-4 w-input"
-							maxlength="256"
-							name="location"
-							placeholder="location"
-							value=""
-						/>
-						<button type="submit" class="submit-button-3 w-button">Let's talk!</button>
-					</form>
-				</div>
-			</div>
-		</section>
-
-		<!-- Featured Post Section -->
-		<section id="featured-post" class="mb-4 w-container aos-init" data-aos="fade-up"></section>
-
-		<!-- Post Categories Section -->
-		<section id="post-categories" class="cards-section w-container">
-			<h1>Categories</h1>
-		</section>
-
-		<!-- Post Topics Section -->
-		<section id="post-topics" class="cards-section w-container">
-			<h1>Topics</h1>
-		</section>
+		<!-- RH Book Banner -->
+		<a href="https://www.zondervan.com/p/redeeming-heartache/" target="_blank">
+			<img
+				src="/img/Images_Redeeming-Heartache-TWITTER-Available-Now.jpg"
+				alt="Redeeming Heartache Available Now"
+				class="image"
+			/>
+		</a>
 
 		<!-- Footer -->
 		<footer id="footer" class="footer">
