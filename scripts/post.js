@@ -1,8 +1,8 @@
-import loadPosts from "./loadingFunctions";
+import loadPost from "./loadingFunctions";
 
 document.addEventListener("DOMContentLoaded", async () => {
 	try {
-		await loadPosts();
+		await loadPost();
 	} catch (error) {
 		console.error("Error loading data:", error);
 	}
