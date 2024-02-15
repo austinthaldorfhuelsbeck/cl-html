@@ -16,14 +16,14 @@ async function loadEventCategories() {
 		sectionsContainer.innerHTML += `
 			<div class="${className}" style="width: 20%">
 				<div class="intro-text-box">
-					<a class="title-link" href="/cl-htmlevents?category=${category.event_category_id}">${category.label}</a>
+					<a class="title-link" href="/events.html?category=${category.event_category_id}">${category.label}</a>
 					<div class="top-border _5">
-						<a class="text-link" href="/cl-htmlevents?category=${category.event_category_id}">${category.text}</a>
+						<a class="text-link" href="/events.html?category=${category.event_category_id}">${category.text}</a>
 					</div>
 				</div>
 			</div>`;
 
-		const eventCategoryTarget = `/events?category=${category.event_category_id}`;
+		const eventCategoryTarget = `/events.html?category=${category.event_category_id}`;
 
 		const footerLink = document.createElement("a");
 		footerLink.className = "footer-link-alt";

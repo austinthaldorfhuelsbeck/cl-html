@@ -16,14 +16,14 @@ async function loadPostCategories() {
 		sectionsContainer.innerHTML += `
             <div class="${className}">
                 <div class="intro-text-box">
-                    <a class="title-link" href="/cl-htmlposts?category=${category.post_category_id}">${category.label}</a>
+                    <a class="title-link" href="/posts.html?category=${category.post_category_id}">${category.label}</a>
                     <div class="top-border _5">
-                        <a class="text-link" href="/cl-htmlposts?category=${category.post_category_id}">${category.text}</a>
+                        <a class="text-link" href="/posts.html?category=${category.post_category_id}">${category.text}</a>
                     </div>
                 </div>
             </div>`;
 
-		const postCategoryTarget = `/posts?category=${category.post_category_id}`;
+		const postCategoryTarget = `/posts.html?category=${category.post_category_id}`;
 
 		const footerLink = document.createElement("a");
 		footerLink.className = "footer-link-alt";

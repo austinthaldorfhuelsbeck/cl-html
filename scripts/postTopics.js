@@ -10,7 +10,7 @@ async function loadPostTopics() {
 	data.data.forEach((topic) => {
 		ul.innerHTML += `
             <li class="category-item" data-aos="fade-up">
-                <a href="/cl-htmlposts?topic=${topic.post_topic_id}">
+                <a href="/posts.html?topic=${topic.post_topic_id}">
                     <div class="circle-color" style="background-color:${topic.hex};"></div>
                     <h4 class="over-img">${topic.label}</h4>
                 </a>

@@ -162,7 +162,7 @@ function coaching() {
                 </p>
                 <br />
                 <p>
-                    <a href="/cl-html#contact-form">Contact Cathy</a>
+                    <a href="/#contact-form">Contact Cathy</a>
                     to set up a 25 min consultation to see if this path is right for you.
                 </p>
                 <br />
