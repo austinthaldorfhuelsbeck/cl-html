@@ -162,7 +162,7 @@
 				<div class="_25-column"></div>
 				<div class="form-block aos-init" data-aos="fade-up">
 					<h3>Reach out today</h3>
-					<form name="wf-form-Contact-Form" class="flex-space top-border _20">
+					<form id="wf-form-Contact-Form" class="flex-space top-border _20">
 						<input
 							type="text"
 							class="text-field-4 w-input"
@@ -268,5 +268,8 @@
 			AOS.init();
 		</script>
 		<script type="module" src="scripts/main.js"></script>
+		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+		<script>(() => emailjs.init("user_CvpPf1sJ7rZo6giCrFhIr"))();
+		</script>
 	</body>
 </html>
