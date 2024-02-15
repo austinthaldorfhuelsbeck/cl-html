@@ -13,7 +13,7 @@ async function loadEventCategories() {
 
 	data.data.forEach((category, index) => {
 		const className = ["intro-box", "intro-box-alt1", "intro-box-alt2", "intro-box-alt3"][index % 4];
-		const eventCategoryTarget = `cl-html/events?category=${category.event_category_id}`;
+		const eventCategoryTarget = `events?category=${category.event_category_id}`;
 
 		sectionsContainer.innerHTML += `
 			<div class="${className}" style="width: 20%">

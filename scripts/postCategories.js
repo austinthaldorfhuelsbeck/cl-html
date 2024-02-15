@@ -13,7 +13,7 @@ async function loadPostCategories() {
 
 	data.data.forEach((category, index) => {
 		const className = ["intro-box", "intro-box-alt1", "intro-box-alt2", "intro-box-alt3"][index % 4];
-		const postCategoryTarget = `cl-html/posts?category=${category.post_category_id}`;
+		const postCategoryTarget = `posts?category=${category.post_category_id}`;
 
 		sectionsContainer.innerHTML += `
             <div class="${className}">
