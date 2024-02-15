@@ -15,7 +15,7 @@ function getDetailUrl() {
 function createPostElement(post, topic) {
 	const postElement = document.createElement("a");
 	postElement.className = "grow";
-	postElement.href = `/post?id=${post.post_id}`;
+	postElement.href = `/cl-html/post?id=${post.post_id}`;
 	const displayText = post.text.length > 250 ? `${post.text.slice(0, 250)}...` : post.text;
 	postElement.innerHTML = `
         <div class="card aos-init aos-animate" data-aos="fade">
