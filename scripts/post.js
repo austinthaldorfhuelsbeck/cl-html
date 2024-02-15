@@ -1,4 +1,4 @@
-import loadPost from "./loadingFunctions";
+import { loadPost } from "./loadingFunctions.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
 	try {
