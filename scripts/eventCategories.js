@@ -39,7 +39,7 @@ async function loadEventCategories() {
 		navLi.appendChild(navLink);
 		eventCategoriesDropdown.appendChild(navLi);
 	});
-	eventCategoriesSection.appendChild(sectionsContainer);
+	if (eventCategoriesSection) eventCategoriesSection.appendChild(sectionsContainer);
 }
 
 export { loadEventCategories };
