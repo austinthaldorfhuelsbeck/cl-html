@@ -721,7 +721,7 @@ h3 {
     top: -30px;
     width: 70%;
     height: 425px;
-    background-image: url("/img/Cathy-2020-90.jpg");
+    background-image: url("/cl-html/img/Cathy-2020-90.jpg");
     background-position: 0px 27%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -828,7 +828,7 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: #ceb3cb;
-    background-image: url("/img/Abstract-1.jpg");
+    background-image: url("/cl-html/img/Abstract-1.jpg");
     background-position: 0px 600px;
     background-size: auto;
 }
@@ -838,7 +838,7 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: transparent;
-    background-image: url("/img/Abstract-2.jpg");
+    background-image: url("/cl-html/img/Abstract-2.jpg");
     background-position: 0px 0px;
     background-size: cover;
 }
@@ -848,14 +848,14 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: #ceb3cb;
-    background-image: url("/img/Abstract-3.jpg");
+    background-image: url("/cl-html/img/Abstract-3.jpg");
     background-position: 0px 0px;
     background-size: auto;
 }
 .intro-box-alt3 {
     margin-right: 0%;
     background-color: transparent;
-    background-image: url("/img/Abstract-4.jpg");
+    background-image: url("/cl-html/img/Abstract-4.jpg");
     background-position: 0px 0px;
     background-size: cover;
 }
@@ -897,7 +897,7 @@ h3 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.53);
-    background-image: url("/img/Abstract-1.jpg");
+    background-image: url("/cl-html/img/Abstract-1.jpg");
     background-position: 0px 0px;
     background-size: cover;
     opacity: 1;

@@ -19,7 +19,7 @@ function createPostElement(post, topic) {
 	const displayText = post.text.length > 250 ? `${post.text.slice(0, 250)}...` : post.text;
 	postElement.innerHTML = `
         <div class="card aos-init aos-animate" data-aos="fade">
-            <img src="${post.img || "/img/Abstract-1.jpg"}" class="card-img-top" alt="${post.label}" />
+            <img src="${post.img || "/cl-html/img/Abstract-1.jpg"}" class="card-img-top" alt="${post.label}" />
             <div class="topic-banner" style="background-color: ${topic ? topic.hex : "#ddd"}"></div>
             <div class="card-body">
                 <h3 class="card-title">${post.label}</h3>
@@ -95,7 +95,7 @@ async function loadPost() {
 					post.audio || post.video
 						? ""
 						: `<img
-							src="../img/cathy-loerzel-signature.png"
+							src="../cl-html/img/cathy-loerzel-signature.png"
 							alt="Cathy Loerzel"
 							class="signature"
 						/>`
