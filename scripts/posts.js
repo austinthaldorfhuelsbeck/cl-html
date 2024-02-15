@@ -31,6 +31,7 @@ function createPostElement(post, topic) {
 }
 
 async function loadPosts() {
+	console.log(window.location.pathname);
 	if (!window.location.pathname.includes("posts?")) return;
 
 	const detailUrl = getDetailUrl();
@@ -55,6 +56,7 @@ async function loadPosts() {
 }
 
 async function loadPost() {
+	console.log(window.location.pathname);
 	if (!window.location.pathname.includes("post?")) return;
 
 	console.log("Loading post!", window.location.id);
