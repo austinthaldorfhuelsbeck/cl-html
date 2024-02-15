@@ -34,7 +34,10 @@ async function loadPosts() {
 	if (!window.location.pathname.includes("posts?")) return;
 
 	const detailUrl = getDetailUrl();
+	console.log("Ready to fetch", detailUrl);
+	console.log("Fetching posts", `posts${window.location.search}`);
 	const postsRes = await fetchData(`posts${window.location.search}`);
+	console.log("Response", postsRes);
 	const postTopicsRes = await fetchData("post_topics");
 
 	if (detailUrl) {
@@ -54,6 +57,8 @@ async function loadPosts() {
 async function loadPost() {
 	if (!window.location.pathname.includes("post?")) return;
 
+	console.log("Loading post!", window.location.id);
+	console.log("Ready to fetch", detailUrl);
 	const detailUrl = getDetailUrl();
 	if (detailUrl) {
 		const detailResponse = await fetchData(detailUrl);
@@ -61,6 +66,7 @@ async function loadPost() {
 			document.getElementById("back-to-posts").textContent = "← Back to all posts";
 
 			const post = detailResponse.data;
+			console.log("Response", detailResponse.data);
 
 			const topicRes = await fetchData(`post_topics/${post.post_topic_id}`);
 			const postDetailSection = document.getElementById("post-full-detail");
