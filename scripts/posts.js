@@ -31,7 +31,7 @@ function createPostElement(post, topic) {
 }
 
 async function loadPosts() {
-	if (!window.location.pathname.includes("/posts")) return;
+	if (!window.location.pathname.includes("/posts?")) return;
 
 	const detailUrl = getDetailUrl();
 	const postsRes = await fetchData(`posts${window.location.search}`);
@@ -52,7 +52,7 @@ async function loadPosts() {
 }
 
 async function loadPost() {
-	if (!window.location.pathname.includes("/post.")) return;
+	if (!window.location.pathname.includes("/post?")) return;
 
 	const detailUrl = getDetailUrl();
 	if (detailUrl) {
