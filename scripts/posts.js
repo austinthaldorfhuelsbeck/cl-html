@@ -15,7 +15,7 @@ function getDetailUrl() {
 function createPostElement(post, topic) {
 	const postElement = document.createElement("a");
 	postElement.className = "grow";
-	postElement.href = `/post.html?id=${post.post_id}`;
+	postElement.href = `/post?id=${post.post_id}`;
 	const displayText = post.text.length > 250 ? `${post.text.slice(0, 250)}...` : post.text;
 	postElement.innerHTML = `
         <div class="card aos-init aos-animate" data-aos="fade">
@@ -67,7 +67,7 @@ async function loadPost() {
 			postDetailSection.innerHTML = `
                 <h1>${post.label}</h1>
                 <div class="col-3">
-                    <a class="white-text" href="/posts.html?topic=${post.post_topic_id}" style="background-color: ${topicRes.data.hex}">
+                    <a class="white-text" href="/cl-htmlposts?topic=${post.post_topic_id}" style="background-color: ${topicRes.data.hex}">
                         <em>← Back to topic</em>
                     </a>
                     <h5>Published on ${new Date(post.created_at).toLocaleDateString()}</h5>
@@ -113,7 +113,7 @@ async function loadFeaturedPost() {
 	const { img, label, post_id } = data.data;
 	featuredPostSection.innerHTML = `
         <h1 class="featured-blog-header">Featured Post</h1>
-        <a class="text-img-container" href="/post.html?id=${post_id}">
+        <a class="text-img-container" href="/cl-htmlpost?id=${post_id}">
             <img class="image shadow featured-image" src="${img}" alt="${label}" />
             <p class="title-link featured-text">${label}</p>
         </a>
