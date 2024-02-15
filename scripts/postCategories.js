@@ -13,17 +13,17 @@ async function loadPostCategories() {
 
 	data.data.forEach((category, index) => {
 		const className = ["intro-box", "intro-box-alt1", "intro-box-alt2", "intro-box-alt3"][index % 4];
+		const postCategoryTarget = `cl-html/posts?category=${category.post_category_id}`;
+
 		sectionsContainer.innerHTML += `
             <div class="${className}">
                 <div class="intro-text-box">
-                    <a class="title-link" href="/cl-html/posts?category=${category.post_category_id}">${category.label}</a>
+                    <a class="title-link" href=${postCategoryTarget}>${category.label}</a>
                     <div class="top-border _5">
-                        <a class="text-link" href="/cl-html/posts?category=${category.post_category_id}">${category.text}</a>
+                        <a class="text-link" href=${postCategoryTarget}>${category.text}</a>
                     </div>
                 </div>
             </div>`;
-
-		const postCategoryTarget = `/posts?category=${category.post_category_id}`;
 
 		const footerLink = document.createElement("a");
 		footerLink.className = "footer-link-alt";
