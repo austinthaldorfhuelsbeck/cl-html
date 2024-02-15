@@ -54,9 +54,9 @@ async function loadPosts() {
 }
 
 async function loadPost() {
+	const detailUrl = getDetailUrl();
 	console.log("Loading post!", window.location.id);
 	console.log("Ready to fetch", detailUrl);
-	const detailUrl = getDetailUrl();
 	if (detailUrl) {
 		const detailResponse = await fetchData(detailUrl);
 		if (detailResponse) {
