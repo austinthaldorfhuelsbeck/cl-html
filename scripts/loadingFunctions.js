@@ -33,10 +33,7 @@ function createPostElement(post, topic) {
 
 async function loadPosts() {
 	const detailUrl = getDetailUrl();
-	console.log("Ready to fetch", detailUrl);
-	console.log("Fetching posts", `posts${window.location.search}`);
 	const postsRes = await fetchData(`posts${window.location.search}`);
-	console.log("Response", postsRes);
 	const postTopicsRes = await fetchData("post_topics");
 
 	if (detailUrl) {
@@ -55,15 +52,12 @@ async function loadPosts() {
 
 async function loadPost() {
 	const detailUrl = getDetailUrl();
-	console.log("Loading post!", window.location.id);
-	console.log("Ready to fetch", detailUrl);
 	if (detailUrl) {
 		const detailResponse = await fetchData(detailUrl);
 		if (detailResponse) {
 			document.getElementById("back-to-posts").textContent = "← Back to all posts";
 
 			const post = detailResponse.data;
-			console.log("Response", detailResponse.data);
 
 			const topicRes = await fetchData(`post_topics/${post.post_topic_id}`);
 			const postDetailSection = document.getElementById("post-full-detail");
@@ -163,10 +157,8 @@ async function displayEvents(events) {
 }
 
 async function loadEvents() {
-	const path = window.location.pathname.split("/").pop();
-	if (!path.includes("events")) return;
-
 	const searchQuery = window.location.search;
+	console.log("Loading events", searchQuery);
 	const eventsRes = await fetchData(`events${searchQuery}`);
 
 	// Filter only upcoming events
