@@ -320,10 +320,10 @@ function intensives() {
 }
 
 const eventDescriptions = {
-	1703796966610: retreats,
-	1703796966611: coaching,
-	1703796966612: conferences,
-	1703796966613: intensives,
+	1708049540428: retreats,
+	1708049570762: coaching,
+	1708049563829: conferences,
+	1708049577379: intensives,
 };
 
 function getEventDescription(categoryId) {
