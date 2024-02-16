@@ -7,7 +7,7 @@ function retreats() {
             </h1>
         </div>
         <img
-            src="../cl-html/img/0070D2C1-9128-41EF-B439-6F6FA96BBB7C_1_105_c.jpeg"
+            src="../img/0070D2C1-9128-41EF-B439-6F6FA96BBB7C_1_105_c.jpeg"
             alt="Sacred Interruption"
             class="image-banner"
             style="object-position: 0% 15%; opacity: 0.85;"
@@ -32,7 +32,7 @@ function retreats() {
             <div class="container-left py-3 align-right">
                 <div class="container-left__image">
                     <img
-                        src="../cl-html/img/A371C13E-DBA0-4E09-9118-95A385023766_1_105_c.jpeg"
+                        src="../img/A371C13E-DBA0-4E09-9118-95A385023766_1_105_c.jpeg"
                         alt="Roses and Candles - Holy"
                         class="px-2"
                         style="width: 60rem; opacity: 0.8;"
@@ -82,7 +82,7 @@ function retreats() {
                     </div>
                     <div class="container-right__image">
                         <img
-                            src="../cl-html/img/D16573AD-2AFD-4977-B265-3110C842145D_1_105_c.jpeg"
+                            src="../img/D16573AD-2AFD-4977-B265-3110C842145D_1_105_c.jpeg"
                             alt="Pie and coffee"
                             class="px-4 py-5"
                             style="width: 90rem; opacity: 0.8;"
@@ -94,7 +94,7 @@ function retreats() {
             <div class="container-left py-3 align-right aos-init aos-animate" data-aos="fade">
                 <div class="container-left__image">
                     <img
-                        src="../cl-html/img/7BCF3C1C-1576-4341-A58F-471AC0DDE71D_1_105_c.jpeg"
+                        src="../img/7BCF3C1C-1576-4341-A58F-471AC0DDE71D_1_105_c.jpeg"
                         alt="Snow falling at winter retreat off porch"
                         class="px-2 py-5"
                         style="width: 100rem; opacity: 0.8;"
@@ -140,7 +140,7 @@ function retreats() {
                 </div>
                 <div class="container-right__image">
                     <img
-                        src="../cl-html/img/A8B8007E-0277-4AD0-9B16-1470F3478C08_1_105_c.jpeg"
+                        src="../img/A8B8007E-0277-4AD0-9B16-1470F3478C08_1_105_c.jpeg"
                         alt="Cathy and participant at the beach friendly sunglasses"
                         class="px-4 py-5"
                         style="width: 80rem; opacity: 0.8;"
@@ -162,7 +162,7 @@ function coaching() {
                 </p>
                 <br />
                 <p>
-                    <a href="/cl-html/#contact-form">Contact Cathy</a>
+                    <a href="/#contact-form">Contact Cathy</a>
                     to set up a 25 min consultation to see if this path is right for you.
                 </p>
                 <br />
@@ -187,7 +187,7 @@ function coaching() {
                 <p><em>Each hour session is $200 with a sliding scale if needed. Insurance does not cover storywork coaching.</em></p>
             </div>
         </div>
-        <img src="../cl-html/img/F2FF90A9-7B8E-4D97-BA3D-3769639AF386_1_105_c.jpeg" alt="Sunset on lake" class="image-banner" style="opacity: 0.85;">
+        <img src="../img/F2FF90A9-7B8E-4D97-BA3D-3769639AF386_1_105_c.jpeg" alt="Sunset on lake" class="image-banner" style="opacity: 0.85;">
     `;
 }
 

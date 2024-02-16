@@ -16,11 +16,11 @@ function getDetailUrl() {
 function createPostElement(post, topic) {
 	const postElement = document.createElement("a");
 	postElement.className = "grow";
-	postElement.href = `/cl-html/post?id=${post.post_id}`;
+	postElement.href = `/post?id=${post.post_id}`;
 	const displayText = post.text.length > 250 ? `${post.text.slice(0, 250)}...` : post.text;
 	postElement.innerHTML = `
         <div class="card aos-init aos-animate" data-aos="fade">
-            <img src="${post.img || "/cl-html/img/Abstract-1.jpg"}" class="card-img-top" alt="${post.label}" />
+            <img src="${post.img || "/img/Abstract-1.jpg"}" class="card-img-top" alt="${post.label}" />
             <div class="topic-banner" style="background-color: ${topic ? topic.hex : "#ddd"}"></div>
             <div class="card-body">
                 <h3 class="card-title">${post.label}</h3>
@@ -64,7 +64,7 @@ async function loadPost() {
 			postDetailSection.innerHTML = `
                 <h1>${post.label}</h1>
                 <div class="col-3">
-                    <a class="white-text" href="/cl-html/posts?topic=${post.post_topic_id}" style="background-color: ${topicRes.data.hex}">
+                    <a class="white-text" href="/posts?topic=${post.post_topic_id}" style="background-color: ${topicRes.data.hex}">
                         <em>← Back to topic</em>
                     </a>
                     <h5>Published on ${new Date(post.created_at).toLocaleDateString()}</h5>
@@ -92,7 +92,7 @@ async function loadPost() {
 					post.audio || post.video
 						? ""
 						: `<img
-							src="../cl-html/img/cathy-loerzel-signature.png"
+							src="../img/cathy-loerzel-signature.png"
 							alt="Cathy Loerzel"
 							class="signature"
 						/>`
@@ -110,7 +110,7 @@ async function loadFeaturedPost() {
 	const { img, label, post_id } = data.data;
 	featuredPostSection.innerHTML = `
         <h1 class="featured-blog-header">Featured Post</h1>
-        <a class="text-img-container" href="/cl-html/post?id=${post_id}">
+        <a class="text-img-container" href="/post?id=${post_id}">
             <img class="image shadow featured-image" src="${img}" alt="${label}" />
             <p class="title-link featured-text">${label}</p>
         </a>

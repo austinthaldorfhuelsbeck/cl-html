@@ -796,7 +796,7 @@ h3 {
     top: -30px;
     width: 70%;
     height: 425px;
-    background-image: url("/cl-html/img/Cathy-2020-90.jpg");
+    background-image: url("/img/Cathy-2020-90.jpg");
     background-position: 0px 27%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -840,7 +840,7 @@ h3 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.53);
-    background-image: url("/cl-html/img/Abstract-1.jpg");
+    background-image: url("/img/Abstract-1.jpg");
     background-position: 0px 0px;
     background-size: cover;
     opacity: 1;
